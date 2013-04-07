@@ -13,6 +13,7 @@
   </head>
 
   <body>
+
     <header>
       <div class="container">
         <h1>Courseware</h1>
@@ -30,41 +31,25 @@
 <pre><code>1.数据结构课程设计中期检查定在4月12日,具体安排待定
 2.计算机组成原理实验:第七周周四（4月11日）
 3.C++ 大作业：
-
-<table width="400" border="1">
-<tr>
-  <th align="center">版  本</th>
-  <th align="center">验收时间段</th>
-  <th align="center">最后期限</th>
- </tr>
- <tr>
-  <td >一</td>
-  <td >7-10 周</td>
-  <td >5月3日</td>
- </tr>
- <tr>
-  <td >二</td>
-  <td >11-13 周</td>
-  <td >5月24日</td>
- </tr>
-  <tr>
-  <td >三</td>
-  <td >14-16 周</td>
-  <td >6月14日</td>
- </tr></table>
+				验收时间段			最后期限
+	版本1：		7-10 周				5月3日
+	版本2：		11-13 周			5月24日
+	版本3：		14-16 周			6月14日
 </code></pre>
+<table border="1">
+<tr>
+<td>row 1, cell 1</td>
+<td>row 1, cell 2</td>
+</tr>
+<tr>
+<td>row 2, cell 1</td>
+<td>row 2, cell 2</td>
+</tr>
+</table>
 
 <h3>课件</h3>
+
 <ol>
-<li>
-<a href="http://pan.baidu.com/share/link?shareid=337659&amp;uk=372577718">形式语言与自动机</a>
-<code>
-Updated at 04/07 13:57 2013 (正则表达式*.pdf)
-<br>
-&nbsp;&nbsp;&nbsp;&nbsp;FTP site:<a href="ftp://10.103.241.140/">click here</a>
-</br>
-</code>
-</li>
 <li>
 <a href="http://pan.baidu.com/share/link?shareid=337650&amp;uk=372577718">概率论与随机过程</a>
 <code>
@@ -96,6 +81,12 @@ Updated at XXXX
 </code>
 </li>
 <li>
+<a href="http://pan.baidu.com/share/link?shareid=337659&amp;uk=372577718">形式语言与自动机</a>
+<code>
+Updated at XXXX
+</code>
+</li>
+<li>
 <a href="http://pan.baidu.com/share/link?shareid=337661&amp;uk=372577718">数据结构课程设计</a>
 <code>
 Updated at XXXX
@@ -121,7 +112,7 @@ Updated at XXXX
 </li>
 </ol><h3>反馈</h3>
 
-<p>课件还没更新？ 快给Au发邮件 <a href="mailto:506747762@qq.com">506747762@qq.com</a> 我会尽快处理的.</p>
+<p>课件还没更新？ 快给小Au发邮件 <a href="mailto:506747762@qq.com">506747762@qq.com</a> 我会尽快处理的.</p>
       </section>
     </div>
 
