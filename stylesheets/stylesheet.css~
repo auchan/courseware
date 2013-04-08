@@ -90,9 +90,9 @@ header h2 {
 }
 
 .inner {
-  position: static;
-  width: 1200px;
-  margin: 0 160px;
+  position: relative;
+  width: 940px;
+  margin: 0 auto;
 }
 
 #content-wrapper {
@@ -101,7 +101,7 @@ header h2 {
 }
 
 #main-content {
-  width: 700px;
+  width: 690px;
   float: left;
 }
 
@@ -110,9 +110,9 @@ header h2 {
 }
 
 aside#sidebar {
-  width:400px;
+  width:200px;
   padding-left: 20px;
-  min-height: 504px;
+  min-height: 1504px;
   float: left;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
   font-size: 12px;
@@ -263,21 +263,6 @@ form {
  
 #main-content h3:before {
   content: "///";
-  color: #9ddcff;
-  padding-right: 0.3em;
-  margin-left: -2em;
-}
-#sidebar  h3 {
-  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-  font-size: 18px;
-  font-weight: bold;
-  margin-top: 24px;
-  margin-bottom: 8px;
-  color: #474747;
-} 
- 
-#sidebar  h3:before {
- /* content: ""; */
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -2em;
