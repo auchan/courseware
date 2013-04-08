@@ -91,8 +91,8 @@ header h2 {
 
 .inner {
   position: static;
-  width: 1200px;
-  margin: 0 160px;
+  width: 1140px;
+  margin: 0 180px;
 }
 
 #content-wrapper {
@@ -246,7 +246,7 @@ form {
   color: #474747;
 } 
 #main-content h2:before {
-  content: "//";
+/*  content: "//"; */
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -1.5em;
@@ -262,7 +262,7 @@ form {
 } 
  
 #main-content h3:before {
-  content: "///";
+ /* content: "///"; */
   color: #9ddcff;
   padding-right: 0.3em;
   margin-left: -2em;
