@@ -18,12 +18,14 @@
     <title>Homepage by auchan</title>
   </head>
 
-  <body>
+  <body onload="startTime()">
   <a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#9C3&amp;text=分享到"></script>
     <header>
       <div class="inner">
         <h1>Homepage</h1>
-        <h2>施工中...</h2>
+        <h2>
+		<div id="time"></div>
+		</h2>
         <a href="https://github.com/auchan/courseware" class="button"><small>View project on</small>GitHub</a>
       </div>
     </header>
@@ -158,5 +160,28 @@ var duoshuoQuery = {short_name:"auchan"};
         </aside>
       </div>
     </div>
+<script type="text/javascript">
+<!-- clock BEGIN -->
+function startTime()
+{
+var today=new Date()
+var h=today.getHours()
+var m=today.getMinutes()
+var s=today.getSeconds()
+// add a zero in front of numbers<10
+m=checkTime(m)
+s=checkTime(s)
+document.getElementById('time').innerHTML="<font size=10>" + h+":"+m+":"+s+"</font>"
+t=setTimeout('startTime()',500)
+}
+
+function checkTime(i)
+{
+if (i<10) 
+  {i="0" + i}
+  return i
+}
+</script>
+<!-- clock END -->
   </body>
 </html>
