@@ -186,7 +186,7 @@ else if (today.getDay() == 4) week = "星期四";
 // add a zero in front of numbers<10
 m=checkTime(m);
 s=checkTime(s);
-document.getElementById('time').innerHTML="<font size=8>" + h+":"+m+":"+s+"</font>" + "            第" + num +"周" + "     " + week;
+document.getElementById('time').innerHTML= " 第" + num +"周" + "     " + week + "  "+ "<font size=8>" + h+":"+m+":"+s+"</font>";
 t=setTimeout('startTime()',500);
 }
 
