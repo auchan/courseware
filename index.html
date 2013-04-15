@@ -10,16 +10,17 @@
     <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
     <script src = "javascripts/expansion.js"></script>
 	<link rel="shortcut icon" href="favicon.ico" >
-   <script type="text/javascript" src="javascript/zns_3dsc.js"></script>
+   <script src="javascripts/zns_3dsc.js"></script>
    <!--
    <link rel="stylesheet" type="text/css" href="stylesheets/zns_style.css" />
-      >
+      -->
     <!--[if lt IE 9]>
     <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
     <title>Index of courseware</title>
   </head>
+  <body onload="startTime()">
   <a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#9C3&amp;text=分享到"></script>
     <header>
       <div class="inner">
@@ -158,9 +159,33 @@ var duoshuoQuery = {short_name:"auchan"};
 	})();
 	</script>
 <!-- Duoshuo Comment END -->
+  <div id="div1">
+	<a href="#">JS课程</a>
+	<a href="#" class="red">教程</a>
+	<a href="#">试听</a>
+	<a href="#">精品</a>
+	<a href="#" class="blue">智能社</a>
+	<a href="#">SEO</a>
+	<a href="#" class="red">特效</a>
+	<a href="#" class="yellow">JavaScript</a>
+	<a href="#">智能社</a>
+	<a href="#" class="red">CSS</a>
+	<a href="#">求职</a>
+	<a href="#" class="blue">面试题</a>
+	<a href="#">继承</a>
+	<a href="#" class="red">智能社</a>
+	<a href="#" class="blue">OOP</a>
+	<a href="#">XHTML</a>
+	<a href="#" class="blue">HTML5</a>
+	<a href="#">W3C</a>
+	<a href="#">css3</a>
+	<a href="#" class="yellow">Busy</a>
+	<a href="#">blue</a>
+</div>
         </aside>
       </div>
     </div>
+
 <!-- clock BEGIN -->
 <script type="text/javascript">
 function startTime()
@@ -174,6 +199,9 @@ var startDate = new Date();
 startDate.setDate(25);
 startDate.setMonth(2 - 1); /* 月份从0开始 */
 startDate.setFullYear(2013);
+startDate.setHours(0);
+startDate.setMinutes(0);
+startDate.setSeconds(0); 
 var interval = today - startDate;
 var num = Math.floor(interval / (24*60*60*1000*7)) + 1;
 // 计算星期
