@@ -61,7 +61,7 @@ window.onload=function ()
 		mouseX/=5;
 		mouseY/=5;
 		/* Auchan add this to adapt web pages */
-		mouseY += 5;
+		mouseY += 0;
 	};
 	
 	setInterval(update, 30);
