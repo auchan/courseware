@@ -91,8 +91,8 @@ header h2 {
 
 .inner {
   position: static;
-  width: 1140px;
-  margin: 0 180px;
+  width: 85%;
+  margin: 0 0 0 15%;
 }
 /* TAG_CLOUD*/
 #div1 {position:relative; width:300px; height:250px; margin: 20px auto 0; alignment-adjust:central}
@@ -108,17 +108,17 @@ header h2 {
 }
 
 #main-content {
-  width: 700px;
+  width: 70%;
   float: left;
 }
 
 #main-content img {
-  max-width: 100%;
+  max-width: 55%;
 }
 
 aside#sidebar {
-  width:400px;
-  padding-left: 20px;
+  width:29%;
+  padding-left: 1%;
   min-height: 504px;
   float: left;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
