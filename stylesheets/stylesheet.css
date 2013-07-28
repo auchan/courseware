@@ -133,8 +133,9 @@ li date{
 }
 
 aside#sidebar {
-  width:39%;
+  width:38%;
   padding-left: 1%;
+  margin-right: 1%;
   min-height: 504px;
   float: left;
   background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
