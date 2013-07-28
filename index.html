@@ -9,15 +9,16 @@
 	    <link rel="stylesheet" type="text/css" href="stylesheets/pygment_trac.css" media="screen" />
 	    <link rel="stylesheet" type="text/css" href="stylesheets/print.css" media="print" />
 		<link rel="shortcut icon" href="favicon.ico" >
-	    <script src="javascripts/expansion.js" /></script>
-	    <script src="javascripts/zns_3dsc.js" /></script>
-		<script src="javascripts/clock.js" /></script>
+	    <script src="javascripts/expansion.js"></script>
+	    <script src="javascripts/zns_3dsc.js"></script>
+		<script src="javascripts/clock.js"></script>
+		<script src="javascripts/browserInfo.js">)</script>
 	    <!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<title>Index of courseware</title>
 	</head>
-	<body onload="startTime()">
+	<body onload="startTime()" onmousemove="showBrowserInfo()">
 		<!--
 		<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#9C3&amp;text=分享到"></script>
 		-->
@@ -83,6 +84,7 @@
 				</section>
 
 				<aside id="sidebar">
+					<div id="browserInfo"></div>
 					<div>
 						<strong><a href="###" onclick="openShutManager(this,'box2',false,'关闭留言','我要留言')">我要留言</a></strong>
 					</div>
