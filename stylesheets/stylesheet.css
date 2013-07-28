@@ -108,16 +108,32 @@ header h2 {
 }
 
 #main-content {
-  width: 70%;
+  width: 60%;
   float: left;
 }
 
 #main-content img {
   max-width: 55%;
 }
+/*
+.pdate {
+	margin-right: 30%;
+	float: right;
+}*/
+li date{
+  font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
+  color: #222;
+  margin-bottom: 30px;
+  font-size: 13px;
+  background-color: #f2f8fc;
+  border: solid 1px #dbe7f3;
+  padding: 0 3px;
+  position: absolute;
+  left: 35%;
+}
 
 aside#sidebar {
-  width:29%;
+  width:39%;
   padding-left: 1%;
   min-height: 504px;
   float: left;
