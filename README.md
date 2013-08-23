@@ -29,7 +29,8 @@ cw/ 下的文件采用 xml 书写，格式介绍如下：
 			<date>
 				<year>2013</year>
 				<month>08</month>
-				<day>22</day>															  <hour>13</hour>
+				<day>22</day>
+				<hour>13</hour>
 				<minute>50</minute>
 			</date>
 			<comment>使用xml表示数据</comment>
