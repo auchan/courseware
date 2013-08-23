@@ -85,8 +85,8 @@ function loadXMLDoc(cw_url, cw_id)
 			for (i=0; i<x.length; i++)
 			{
 				cw_out += "<li>";
-				cw_out += "<a href=\"http://"+cw_info[i].url+"\"target=\"_blank\">"+cw_info[i].name+"</a>";
-				cw_out +="<date>"+cw_info[i].year+"-"+cw_info[i].month+"-"+cw_info[i].day+" "+cw_info[i].hour+":"+cw_info[i].minute+"("+cw_info[i].comment+")"+"</date>";
+				cw_out += "<a href=\""+cw_info[i].url+"\"target=\"_blank\">"+cw_info[i].name+"</a>";
+				cw_out +="<date>"+cw_info[i].year+"-"+cw_info[i].month+"-"+cw_info[i].day+" "+cw_info[i].hour+":"+cw_info[i].minute+" ("+cw_info[i].comment+")"+"</date>";
 				cw_out += "</li>";
 			}
 			document.getElementById(cw_id).innerHTML=cw_out;

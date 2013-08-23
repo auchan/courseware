@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <cw_info>
 	<cw>
-		<name>离散数学</name>
-		<url>www.google.com</url>
+		<name>测试</name>
+		<url>http://www.google.com</url>
 		<date>
 			<year>2013</year>
 			<month>08</month>
@@ -13,8 +13,8 @@
 		<comment>使用xml表示数据</comment>
 	</cw>
 	<cw>
-		<name>c++</name>
-		<url>www.google.com</url>
+		<name>项目按照更新时间顺序排列</name>
+		<url>http:www.google.com</url>
 		<date>
 			<year>2013</year>
 			<month>08</month>
