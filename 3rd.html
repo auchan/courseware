@@ -16,7 +16,7 @@ function loadXMLDoc()
 		  {
 			    if (xmlhttp.readyState==4 && xmlhttp.status==200)
 					    {
-							x=xmlhttp.responseXML.documentElement.getElementsByTagName("cw_info");
+							x=xmlhttp.responseXML.documentElement.getElementsByTagName("cw");
 							for (i=0; i<x.length; i++)
 							{
 								name=x[i].getElementById("name").innerHTML;;
