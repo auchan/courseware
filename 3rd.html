@@ -19,15 +19,16 @@ function loadXMLDoc()
 							x=xmlhttp.responseXML.documentElement.getElementsByTagName("cw");
 							for (i=0; i<x.length; i++)
 							{
-								name=x[i].getElementById("name").innerHTML;;
-								url=x[i].getElementById("url").innerHTML;
+								name=x[i].getElementsByTagName("name");
+								url=x[i].getElementsBytTagName("url");
+								/*
 								year=x[i].getElementById("date").getElementById("year").innerHTML;
 								month=x[i].getElementById("date").getElementById("month").innerHTML;
 								day=x[i].getElementById("date").getElementById("day").innerHTML;
 								hour=x[i].getElementById("date").getElementById("hour").innerHTML;
 								minute=x[i].getElementById("date").getElementById("minute").innerHTML;
-							    document.getElementById("myDiv").innerHTML= name + url + year +
-									month + day + hour + minute;
+								*/
+							    document.getElementById("myDiv").innerHTML= name[0].nodeValue;
 							}
 								    }
 				  }
