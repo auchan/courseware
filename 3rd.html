@@ -16,7 +16,19 @@ function loadXMLDoc()
 		  {
 			    if (xmlhttp.readyState==4 && xmlhttp.status==200)
 					    {
-							    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+							x=xmlhttp.responseXML.documentElement.getElementsByTagName("cw_info");
+							for (i=0; i<x.length; i++)
+							{
+								name=x[i].getElementById("name").innerHTML;;
+								url=x[i].getElementById("url").innerHTML;
+								year=x[i].getElementById("date").getElementById("year").innerHTML;
+								month=x[i].getElementById("date").getElementById("month").innerHTML;
+								day=x[i].getElementById("date").getElementById("day").innerHTML;
+								hour=x[i].getElementById("date").getElementById("hour").innerHTML;
+								minute=x[i].getElementById("date").getElementById("minute").innerHTML;
+							    document.getElementById("myDiv").innerHTML= name + url + year +
+									month + day + hour + minute;
+							}
 								    }
 				  }
 	xmlhttp.open("GET","cw_info.xml",true);
