@@ -16,20 +16,23 @@ function loadXMLDoc()
 		  {
 			    if (xmlhttp.readyState==4 && xmlhttp.status==200)
 					    {
-							x=xmlhttp.responseXML.documentElement.getElementsByTagName("cw");
+							x=xmlhttp.responseXML.documentElement.getElementsByTagName("cw_info");
+							document.getElementById("myDiv").innerHTML = x[0].firstChild.nodeName;
+						/*	
 							for (i=0; i<x.length; i++)
 							{
 								name=x[i].getElementsByTagName("name");
 								url=x[i].getElementsBytTagName("url");
-								/*
+								
 								year=x[i].getElementById("date").getElementById("year").innerHTML;
 								month=x[i].getElementById("date").getElementById("month").innerHTML;
 								day=x[i].getElementById("date").getElementById("day").innerHTML;
 								hour=x[i].getElementById("date").getElementById("hour").innerHTML;
 								minute=x[i].getElementById("date").getElementById("minute").innerHTML;
-								*/
+								
 							    document.getElementById("myDiv").innerHTML= name[0].nodeValue;
 							}
+							*/
 								    }
 				  }
 	xmlhttp.open("GET","cw_info.xml",true);
