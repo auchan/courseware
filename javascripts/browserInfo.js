@@ -7,7 +7,9 @@ function showBrowserInfo() {
 		var ver = parseFloat(ua.substr(i + browser.length)); 
 		browser = "IE " + ver;
 	} 
-	else {
+	else 
+	{
+		// IE 11+ 无法正常识别
 		//其他情况，不是IE 
         browser = "Chrome";
         i = ua.indexOf(browser);  
@@ -24,6 +26,8 @@ function showBrowserInfo() {
 				var ver = ua.substr(i + browser.length); 
 				browser += " " + ver;
 			}
+			else
+				browser = "";
 		}
 
 	}

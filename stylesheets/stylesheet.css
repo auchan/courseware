@@ -113,7 +113,7 @@ header h2 {
 }
 
 #main-content img {
-  max-width: 55%;
+  max-width: 60%;
 }
 /*
 .pdate {
@@ -125,11 +125,12 @@ li date{
   color: #222;
   margin-bottom: 30px;
   font-size: 13px;
-  background-color: #f2f8fc;
-  border: solid 1px #dbe7f3;
+  //background-color: #f2f8fc;
+  border: 1px dotted #66ccff;
   padding: 0 3px;
   position: absolute;
-  left: 35%;
+  left: 25%;
+  margin-left:	150px;
 }
 
 aside#sidebar {
