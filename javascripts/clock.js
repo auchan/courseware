@@ -4,11 +4,16 @@ function startTime()
 	var h = today.getHours();
 	var m = today.getMinutes();
 	var s = today.getSeconds();
-	// 2月25日为教学周第一周的第一天
+	// 2013 年 2 月 25 日为第二学年第二学期，教学周第一周的第一天
+	// 2013 年 8 月 26 日为第三学年第一学期，教学周第一周的第一天
+	startYear = 2013;
+	startMonth = 8;
+	startDay = 26;
+
 	var startDate = new Date();
-	startDate.setDate(25);
-	startDate.setMonth(2 - 1); /* 月份从0开始 */
-	startDate.setFullYear(2013);
+	startDate.setDate(startDay);
+	startDate.setMonth(startMonth - 1); /* 月份从0开始 */
+	startDate.setFullYear(startYear);
 	startDate.setHours(0);
 	startDate.setMinutes(0);
 	startDate.setSeconds(0); 
