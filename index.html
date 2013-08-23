@@ -13,12 +13,13 @@
 	    <script src="javascripts/zns_3dsc.js"></script>
 		<script src="javascripts/clock.js"></script>
 		<script src="javascripts/browserInfo.js">)</script>
+		<script src="javascripts/load_cw_info.js">)</script>
 	    <!--[if lt IE 9]>
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<title>Index of courseware</title>
 	</head>
-	<body onload="startTime()" onmousemove="showBrowserInfo()">
+	<body onload="loadXMLDoc()" onmousemove="showBrowserInfo()">
 		<!--
 		<a class="bshareDiv" href="http://www.bshare.cn/share">分享按钮</a><script type="text/javascript" charset="utf-8" src="http://static.bshare.cn/b/buttonLite.js#uuid=&amp;style=3&amp;fs=4&amp;textcolor=#fff&amp;bgcolor=#9C3&amp;text=分享到"></script>
 		-->
@@ -37,6 +38,8 @@
 							 href="###"onclick="openShutManager(this,'grade3-1',false,'大三上学期 [ - ]','大三上学期 [+]')">大三上学期 [ - ]</a></strong>
 					 <div id="grade3-1">
 					 <h3>课件</h3>
+					 <ul id="cw_g3_s1">
+					 </ul>
 					 </br>
 				     <h3>通知</h3>
 					 </div>
