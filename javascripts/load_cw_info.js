@@ -1,4 +1,4 @@
-function loadXMLDoc()
+function loadXMLDoc(cw_url, cw_id)
 {
 	var xmlhttp;
 	if (window.XMLHttpRequest)
@@ -89,9 +89,9 @@ function loadXMLDoc()
 				cw_out +="<date>"+cw_info[i].year+"-"+cw_info[i].month+"-"+cw_info[i].day+" "+cw_info[i].hour+":"+cw_info[i].minute+"("+cw_info[i].comment+")"+"</date>";
 				cw_out += "</li>";
 			}
-			document.getElementById("cw_g3_s1").innerHTML=cw_out;
+			document.getElementById(cw_id).innerHTML=cw_out;
 		}
 	}
-	xmlhttp.open("GET","cw_info.xml",true);
+	xmlhttp.open("GET",cw_url,true);
 	xmlhttp.send();
 }

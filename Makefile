@@ -1,3 +1,3 @@
 github:
-	git add . ;  git commit -am 'update courseware ' ; git push origin gh-pages
+	git add -A . ;  git commit -am 'update courseware ' ; git push origin gh-pages
 
