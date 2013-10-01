@@ -50,14 +50,14 @@ table {
 body {
   font-size: 15px;
   line-height: 1.5; 
-  background: #fafafa url(../images/body-bg.jpg) 0 0 repeat;
+  background: #fafafa url(../images/body-bg.jpg) 0 0;
   font-family: 'Helvetica Neue', Helvetica, Arial, serif;
   font-weight: 400;
   color: #666;
 }
 
 a {
-  color: #2879d0;
+  color: #2879da;
 }
 a:hover {
   color: #2268b2;
@@ -103,7 +103,7 @@ header h2 {
 #div1 .yellow {color:yellow;}
 /* END OF TAG_CLOUD */
 #content-wrapper {
-  border-top: solid 1px #fff;
+  border-top: solid 5px #66ccff;
   padding-top: 30px;
 }
 
@@ -115,22 +115,22 @@ header h2 {
 #main-content img {
   max-width: 60%;
 }
-/*
-.pdate {
-	margin-right: 30%;
-	float: right;
-}*/
+
+.cw_title{
+	float: left;
+	width: 222;
+	white-space:nowrap
+}
+
 li date{
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
   margin-bottom: 30px;
   font-size: 13px;
   //background-color: #f2f8fc;
-  border: 1px dotted #66ccff;
+  //border: 1px dotted #66ccff;
   padding: 0 3px;
-  position: absolute;
-  left: 25%;
-  margin-left:	150px;
+  position: relative;
 }
 
 aside#sidebar {
@@ -139,7 +139,7 @@ aside#sidebar {
   margin-right: 1%;
   min-height: 504px;
   float: left;
-  background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat;
+  /* background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat; */
   font-size: 12px;
   line-height: 1.8;
 }
