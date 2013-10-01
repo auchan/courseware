@@ -2,7 +2,7 @@
 <cw_info>
     <cw>
         <name>课件根目录</name>
-        <url>http://pan.baidu.com/s/1ssRc0</url>
+        <url> http://dwz.cn/--kjgml--</url>
         <date>
             <year>2013</year>
             <month>09</month>
@@ -14,7 +14,7 @@
     </cw>
 	<cw>
 		<name>微机原理与接口技术</name>
-        <url>http://pan.baidu.com/s/1ssRc0#dir/path=%2F%E5%85%B1%E4%BA%AB%E8%AF%BE%E4%BB%B6%2F%E5%A4%A7%E4%B8%89%E4%B8%8A%2F%E5%BE%AE%E6%9C%BA%E5%8E%9F%E7%90%86%E4%B8%8E%E6%8E%A5%E5%8F%A3%E6%8A%80%E6%9C%AF</url>
+        <url>http://dwz.cn/aMLyT</url>
         <date>
             <year>2013</year>
             <month>09</month>
@@ -26,19 +26,19 @@
 	</cw>
 	<cw>
 		<name>通信原理</name>
-        <url>http://pan.baidu.com/s/1ssRc0#dir/path=%2F%E5%85%B1%E4%BA%AB%E8%AF%BE%E4%BB%B6%2F%E5%A4%A7%E4%B8%89%E4%B8%8A%2F%E9%80%9A%E4%BF%A1%E5%8E%9F%E7%90%86</url>
+        <url> http://dwz.cn/aMLxG</url>
         <date>
             <year>2013</year>
-            <month>09</month>
-            <day>26</day>
+            <month>10</month>
+            <day>01</day>
             <hour>22</hour>
-            <minute>55</minute>
+            <minute>51</minute>
         </date>
-        <comment>第二章 确知信号分析</comment>
+        <comment>第三章 随机信号分析</comment>
 	</cw>
     <cw>
         <name>计算机网络</name>
-        <url>http://pan.baidu.com/s/1ssRc0#dir/path=%2F%E5%85%B1%E4%BA%AB%E8%AF%BE%E4%BB%B6%2F%E5%A4%A7%E4%B8%89%E4%B8%8A%2F%E8%AE%A1%E7%AE%97%E6%9C%BA%E7%BD%91%E7%BB%9C</url>
+        <url>http://dwz.cn/aMLLt</url>
         <date>
             <year>2013</year>
             <month>09</month>
@@ -50,26 +50,26 @@
     </cw>
     <cw>
         <name>操作系统</name>
-        <url>http://pan.baidu.com/s/1ssRc0#dir/path=%2F%E5%85%B1%E4%BA%AB%E8%AF%BE%E4%BB%B6%2F%E5%A4%A7%E4%B8%89%E4%B8%8A%2F%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F</url>
+        <url>http://dwz.cn/aMLLK</url>
         <date>
             <year>2013</year>
-            <month>09</month>
-            <day>26</day>
+            <month>10</month>
+            <day>01</day>
             <hour>22</hour>
-            <minute>57</minute>
+            <minute>54</minute>
         </date>
-        <comment>全部课件</comment>
+        <comment>实验一 操作系统环境</comment>
     </cw>
     <cw>
         <name>编译原理</name>
-        <url>http://pan.baidu.com/s/1ssRc0#dir/path=%2F%E5%85%B1%E4%BA%AB%E8%AF%BE%E4%BB%B6%2F%E5%A4%A7%E4%B8%89%E4%B8%8A%2F%E7%BC%96%E8%AF%91%E5%8E%9F%E7%90%86</url>
+        <url>http://dwz.cn/aMLM4</url>
         <date>
             <year>2013</year>
-            <month>09</month>
-            <day>26</day>
+            <month>10</month>
+            <day>01</day>
             <hour>22</hour>
-            <minute>55</minute>
+            <minute>50</minute>
         </date>
-        <comment>编译概述</comment>
+        <comment>第三章 词法分析</comment>
     </cw>
 </cw_info>
