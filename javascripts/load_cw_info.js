@@ -82,13 +82,15 @@ function loadXMLDoc(cw_url, cw_id)
 			// <date>年-月-日 小时:分钟（注释）</date>
 			// </li>
 			cw_out= "";
+			cw_out += "<ul class=\"cw_line\">";
 			for (i=0; i<x.length; i++)
 			{
 				cw_out += "<li>";
-				cw_out += "<div class=\"cw_title\"><a href=\""+cw_info[i].url+"\"target=\"_blank\">"+ (i+1)+". "+cw_info[i].name+"</a></div>";
+				cw_out += "<div class=\"cw_title\"><a href=\""+cw_info[i].url+"\"target=\"_blank\">"+cw_info[i].name+"</a></div>";
 				cw_out +=" <date>"+cw_info[i].year+"-"+cw_info[i].month+"-"+cw_info[i].day+" "+cw_info[i].hour+":"+cw_info[i].minute+" ("+cw_info[i].comment+")"+"</date>";
 				cw_out += "</li>";
 			}
+			cw_out += "</ul>";
 			document.getElementById(cw_id).innerHTML=cw_out;
 		}
 	}
