@@ -72,28 +72,4 @@
         </date>
         <comment>编译概述</comment>
     </cw>
-	<cw>
-		<name>测试</name>
-		<url>http://www.google.com</url>
-		<date>
-			<year>2013</year>
-			<month>08</month>
-			<day>22</day>
-			<hour>13</hour>
-			<minute>50</minute>
-		</date>
-		<comment>使用xml表示数据</comment>
-	</cw>
-	<cw>
-		<name>项目按照更新时间顺序排列</name>
-		<url>http:www.google.com</url>
-		<date>
-			<year>2013</year>
-			<month>08</month>
-			<day>21</day>
-			<hour>13</hour>
-			<minute>50</minute>
-		</date>
-		<comment>感觉这个xml设计不太科学</comment>
-	</cw>
 </cw_info>
