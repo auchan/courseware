@@ -9,29 +9,21 @@ function loadXMLDoc(cw_url, cw_id)
 	{// code for IE6, IE5
 		xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
 	}
-
+	function splitDate(date)
+	{
+		return {
+			y:date.split(" ")[0].split("-")[0],
+			m:date.split(" ")[0].split("-")[1],
+			d:date.split(" ")[0].split("-")[2],
+			h:date.split(" ")[1].split(":")[0],
+			M:date.split(" ")[1].split(":")[1]
+		}
+	}
 	function earlyThan(a, b)
 	{
-		if (a.year < b.year)
-			return true;
-		else if (a.year == b.year)
-		{
-			if (a.month < b.month)
-				return true;
-			else if (a.month == b.month)
-			{
-				if (a.day < b.day)
-					return true;
-				else if (a.day == b.day)
-				{
-					if (a.hour < b.hour)
-						return true;
-					else if (a.minute < b.minute)
-						return true;
-				}
-			}
-		}
-		return false;
+		totalMinutesA = ((((a.y * 12)+a.m)*31+a.d)*24+a.h)+a.M
+		totalMinutesB = ((((b.y * 12)+b.m)*31+b.d)*24+b.h)+b.M
+		return totalMinutesA < totalMinutesB
 	}
 	xmlhttp.onreadystatechange=function()
 	{
@@ -45,29 +37,20 @@ function loadXMLDoc(cw_url, cw_id)
 
 				n = cw[1].firstChild.nodeValue;			// 课件名称
 				u = cw[3].firstChild.nodeValue;			// 课件链接
-				// date: year:month:day:hour:minute
-				dateStruct = cw[5].childNodes;			// 日期结构
-				y = dateStruct[1].firstChild.nodeValue;		// 年
-				m = dateStruct[3].firstChild.nodeValue;		// 月
-				d = dateStruct[5].firstChild.nodeValue;		// 日
-				h = dateStruct[7].firstChild.nodeValue;		// 小时
-				mi = dateStruct[9].firstChild.nodeValue;		// 分钟
+				// date: year-month-day hour:minute
+				d = cw[5].firstChild.nodeValue;			// 日期
 				c = cw[7].firstChild.nodeValue;			// 注释
 
 				cw_info[i] = {
 					name: n,
 					url: u,
-					year: y,
-					month: m,
-					day: d,
-					hour: h,
-					minute: mi,
-					comment: c
+					date:d,
+					comment:c
 				}
 				// insert-sort, 选择日期最大，即最新的放到前面
 				for (j=i;j>0;j--)
 				{
-					if (earlyThan(cw_info[j-1], cw_info[j]))
+					if (earlyThan(splitDate(cw_info[j-1].date), splitDate(cw_info[j].date)))
 					{
 						tmp = cw_info[j-1];
 						cw_info[j-1] = cw_info[j];
@@ -87,7 +70,7 @@ function loadXMLDoc(cw_url, cw_id)
 			{
 				cw_out += "<li>";
 				cw_out += "<div class=\"cw_title\"><a href=\""+cw_info[i].url+"\"target=\"_blank\">"+cw_info[i].name+"</a></div>";
-				cw_out +=" <date>"+cw_info[i].year+"-"+cw_info[i].month+"-"+cw_info[i].day+" "+cw_info[i].hour+":"+cw_info[i].minute+" ("+cw_info[i].comment+")"+"</date>";
+				cw_out +=" <date>"+cw_info[i].date+" ("+cw_info[i].comment+")"+"</date>";
 				cw_out += "</li>";
 			}
 			cw_out += "</ul>";
