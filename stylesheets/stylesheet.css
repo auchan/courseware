@@ -132,6 +132,16 @@ header h2 {
 	width: 222px;	
 	display: inline;
 }
+
+.mymessage{
+    max-height: 500px;
+	overflow:auto;
+	float: left;
+	position: relative;
+	display: block;
+	width: 100%;
+	height: 400px;
+}
 li date{
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
