@@ -142,6 +142,14 @@ header h2 {
 	width: 100%;
 	height: 400px;
 }
+.comment{
+height:100px;
+float: left;
+position: relative;
+display: block;
+margin: 2px 2px 2px 2px;
+}
+
 li date{
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
   color: #222;
@@ -194,13 +202,37 @@ header a.button {
   background: transparent url(../images/github-button.png) 0 0 no-repeat;
 }
 aside a.button {
-  width: 138px;
-  padding-left: 64px;
-  display: block;
-  background: transparent url(../images/download-button.png) 0 0 no-repeat;
-  margin-bottom: 20px;
-  font-size: 21px;
+  width: 80px;
+  height: 20px;
+  line-height: 1.0;
+  font-size: 14px;
+  background-color: #88aadd;
+  padding-left: 2px;
+  padding-top: 5px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+    -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  margin: 2px 2px 2px 2px;
+  margin-top: 2px;
+  float:left;
+  text-align:center;
 }
+aside a:hover,.maintainHover{color:#fff; text-decoration:none; background:#99f}
+section a.button {
+  width: 134px;
+  height: 58px;
+  line-height: 1.2;
+  font-size: 20px;
+  background-color: #88aadd;
+  padding-left: 2px;
+  padding-top: 2px;
+  margin-top: 20px;s
+  margin-bottom: 20px;
+  font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
+    -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+section a:hover,.maintainHover{color:#fff; text-decoration:none; background:#99f}
 
 code, pre {
   font-family: Monaco, "Bitstream Vera Sans Mono", "Lucida Console", Terminal, monospace;
