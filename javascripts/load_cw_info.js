@@ -29,18 +29,23 @@ function loadXMLDoc(cw_url, cw_id)
 	{
 		if (xmlhttp.readyState==4 && xmlhttp.status==200)
 		{
+			//alert('step-1')
 			x=xmlhttp.responseXML.documentElement.getElementsByTagName("cw");
 			cw_info = new Array();
 			for (i=0;i<x.length;i++)
 			{
-				cw=x[i].childNodes;
-
-				n = cw[1].firstChild.nodeValue;			// 课件名称
-				u = cw[3].firstChild.nodeValue;			// 课件链接
+				var cw=x[i].childNodes
+				var list
+				if(cw.length == 4) // IE8 忽略了空白行
+					list = [0, 1, 2, 3]
+				else		// firefox, chrome, safari 没有忽略空白行
+					list = [1, 3, 5, 7]
+					
+				n = cw[list[0]].firstChild.nodeValue;			// 课件名称
+				u = cw[list[1]].firstChild.nodeValue;			// 课件链接
 				// date: year-month-day hour:minute
-				d = cw[5].firstChild.nodeValue;			// 日期
-				c = cw[7].firstChild.nodeValue;			// 注释
-
+				d = cw[list[2]].firstChild.nodeValue;			// 日期
+				c = cw[list[3]].firstChild.nodeValue;			// 注释
 				cw_info[i] = {
 					name: n,
 					url: u,
