@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset='utf-8'>
-		<meta http-equiv="X-UA-Compatible" content="chrome=1">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<link rel='stylesheet' type='text/css' href='https://fonts.googleapis.com/css?family=Architects+Daughter' />
 		<link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen" />
@@ -31,14 +31,18 @@
 					<a href="###" class="button" onclick="openShutManager(this,'grade3-1',false,'大三上学期 [ - ]','大三上学期 [+]')">大三上学期 [ - ]</a>
 					<div id="grade3-1">
 						<h3>课件</h3>
-						<ul id="cw_g3_s1"></ul>
+						<ul id="cw_g3_s1">等待加载中...</ul>
+						<!-- 立即加载本学期课件-->
+						<script>
+						loadXMLDoc("cw/cw_info_4.xml", "cw_g3_s1");
+						</script>
 					</div>
 					<br />
 					<strong><a href="###" class="button" onclick="openShutManager(this,'grade2-2',false,'大二下学期 [ - ]','大二下学期 [+]')">大二下学期 [+]</a></strong>
 					<div id="grade2-2" style="display:none">	
 						<h3>课件</h3>
 						<!-- 目录内容 -->
-						<ul id="cw_g2_s2"></ul>
+						<ul id="cw_g2_s2">等待加载中...</ul>
 					</div>
 				</section>
 
@@ -60,12 +64,11 @@
 			</div>
 		</div>
 		<footer>
-		<a href=".">CS'2011 Class 12, BUPT</a> &copy; auchan 2012-2013
+		<a href=".">CS'2011 Class 12, BUPT</a> &copy; auchan 2013
 		</footer>
 		<script>
 		function init()
 		{		
-			loadXMLDoc("cw/cw_info_4.xml", "cw_g3_s1");
 			loadXMLDoc("cw/cw_info_3.xml", "cw_g2_s2");
 			showBrowserInfo();
 			startTime();
