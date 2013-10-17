@@ -15,8 +15,8 @@
 	<cw>
 		<name>通信原理</name>
         <url> http://dwz.cn/aMLxG</url>
-        <date>2013-10-01 22:51</date>
-        <comment>第三章 随机信号分析</comment>
+        <date>2013-10-17 15:41</date>
+        <comment>第五章 模拟调制</comment>
 	</cw>
     <cw>
         <name>计算机网络</name>
@@ -27,14 +27,14 @@
     <cw>
         <name>操作系统</name>
         <url>http://dwz.cn/aMLLK</url>
-        <date>2013-10-01 22:54</date>
-        <comment>实验一 操作系统环境</comment>
+        <date>2013-10-17 15:42</date>
+        <comment>新增 CH04-thread 和 CH10-file...</comment>
     </cw>
     <cw>
         <name>编译原理</name>
         <url>http://dwz.cn/aMLM4</url>
-        <date>2013-10-01 22:50</date>
-        <comment>第三章 词法分析</comment>
+        <date>2013-10-17 15:43</date>
+        <comment>第四章 语法分析-S2</comment>
     </cw>
 	<cw>
         <name>排队论</name>
