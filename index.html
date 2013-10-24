@@ -15,40 +15,50 @@
 		<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
 		<![endif]-->
 		<title>Index of courseware</title>
+		<style>
+		aside code{
+			  background-color: #eee;
+				border: solid 1px #dbe7f3;
+				padding: 0 3px;
+		}
+		aside .gist .gist-file .gist-data{
+			background-color: #eee;
+		}
+		</style>
 	</head>
-	<body onload="init()">
+	<body onload="init()" class="myscrollbar">
 		<header>
 			<div class="inner">
-				<h2>
-					<div id="time"></div>
-				</h2>
-				<a href="https://github.com/auchan/courseware" class="button"><small>View project on</small>GitHub</a>
+				<div id="time"></div>
+				<a href="https://github.com/auchan/courseware" class="button" style="display:none;"><small>View project on</small>GitHub</a>
 			</div>
 		</header>
 		<div id="content-wrapper">
 			<div class="inner clearfix">
 				 <section id="main-content">
+					<div class="cw_block">
 					<a href="###" class="button" onclick="openShutManager(this,'grade3-1',false,'大三上学期 [ - ]','大三上学期 [+]')">大三上学期 [ - ]</a>
 					<div id="grade3-1">
-						<h3>课件</h3>
 						<ul id="cw_g3_s1">等待加载中...</ul>
 						<!-- 立即加载本学期课件-->
 						<script>
 						loadXMLDoc("cw/cw_info_4.xml", "cw_g3_s1");
 						</script>
 					</div>
-					<br />
-					<strong><a href="###" class="button" onclick="openShutManager(this,'grade2-2',false,'大二下学期 [ - ]','大二下学期 [+]')">大二下学期 [+]</a></strong>
+					</div>
+					
+					<div class="cw_block">
+					<a href="###" class="button" onclick="openShutManager(this,'grade2-2',false,'大二下学期 [ - ]','大二下学期 [+]')">大二下学期 [+]</a>
 					<div id="grade2-2" style="display:none">	
-						<h3>课件</h3>
 						<!-- 目录内容 -->
 						<ul id="cw_g2_s2">等待加载中...</ul>
 					</div>
+					</div>
 				</section>
 
-				<aside id="sidebar">
-					<div id="browserInfo"></div>
-					<div class="mymessage">
+				<aside id="sidebar" >
+					<div id="browserInfo" style="color: #faa;"></div>
+					<div id="mymessage">
 					<script src="https://gist.github.com/auchan/f4b5d75f0795042851bb.js"></script>
 					</div>
 					<div class="comment">
