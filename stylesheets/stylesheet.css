@@ -115,7 +115,7 @@ header h2 {
 .cw_line{
   display:block;
   position: relative;
-  width: 100%;
+  width: 98%;
   z-index: 1000;float: left;
   min-width: 120px;padding: 5px 0;margin: 2px 0 20px 2px;list-style: none;
   background-color: #ffffff;border: 1px solid #ccc;
@@ -135,13 +135,38 @@ header h2 {
 
 .mymessage{
     max-height: 500px;
-	overflow:auto;
+	overflow:hidden;
 	float: left;
 	position: relative;
 	display: block;
-	width: 100%;
+	width: 95%;
 	height: 400px;
+	border: 1px solid #aaa;
+	padding: 4px 4px 4px 4px;
+	border-radius: 6px;
 }
+Body {
+scrollbar-arrow-color: #f4ae21;  /*图6,三角箭头的颜色*/
+scrollbar-face-color: #333;  /*图5,立体滚动条的颜色*/
+scrollbar-3dlight-color: #666;  /*图1,立体滚动条亮边的颜
+
+色*/
+scrollbar-highlight-color: #666;  /*图2,滚动条空白部分的
+
+颜色*/
+scrollbar-shadow-color: #999;  /*图3,立体滚动条阴影的颜
+
+色*/
+scrollbar-darkshadow-color: #666;  /*图4,立体滚动条强阴
+
+影的颜色*/
+scrollbar-track-color: #666;  /*图7,立体滚动条背景颜色*/
+
+scrollbar-base-color:#f8f8f8;  /*滚动条的基本颜色*/
+Cursor:url(mouse.cur);  /*自定义个性鼠标*/
+}
+
+
 .comment{
 height:100px;
 float: left;
@@ -162,7 +187,7 @@ li date{
 }
 
 aside#sidebar {
-  width:38%;
+  width:37%;
   padding-left: 1%;
   margin-right: 1%;
   min-height: 504px;
@@ -170,6 +195,9 @@ aside#sidebar {
   /* background: transparent url(../images/sidebar-bg.jpg) 0 0 no-repeat; */
   font-size: 12px;
   line-height: 1.8;
+  border: 1px solid #ccc;
+  -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 
 aside#sidebar p.repo-owner,
