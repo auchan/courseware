@@ -9,8 +9,8 @@
 	<cw>
 		<name>微机原理与接口技术</name>
         <url>http://dwz.cn/aMLyT</url>
-        <date>2013-09-26 22:53</date>		
-        <comment>2-3</comment>
+        <date>2013-10-25 23:29</date>		
+        <comment>4-2</comment>
 	</cw>
 	<cw>
 		<name>通信原理</name>
@@ -27,19 +27,19 @@
     <cw>
         <name>操作系统</name>
         <url>http://dwz.cn/aMLLK</url>
-        <date>2013-10-17 15:42</date>
-        <comment>新增 CH04-thread 和 CH10-file...</comment>
+        <date>2013-10-24 15:42</date>
+        <comment>实验二 进程管理</comment>
     </cw>
     <cw>
         <name>编译原理</name>
         <url>http://dwz.cn/aMLM4</url>
-        <date>2013-10-17 15:43</date>
-        <comment>第四章 语法分析-S2</comment>
+        <date>2013-10-25 23:27</date>
+        <comment>第四章 语法分析-S3,S4</comment>
     </cw>
 	<cw>
         <name>排队论</name>
         <url> http://dwz.cn/aOLbg</url>
-        <date>2013-10-07 14:22</date>
-        <comment>第二章</comment>
+        <date>2013-10-25 23:26</date>
+        <comment>排队论11</comment>
     </cw>
 </cw_info>
