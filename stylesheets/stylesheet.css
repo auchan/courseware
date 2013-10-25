@@ -99,7 +99,7 @@ header h2 {
 .inner {
   position: static;
   width: 85%;
-  margin: 0 0 0 15%;
+  margin: 0 0 0 9%;
 }
 /* TAG_CLOUD*/
 #div1 {position:relative; width:300px; height:250px; margin: 20px auto 0; alignment-adjust:central}
@@ -116,7 +116,7 @@ header h2 {
 
 #main-content {
   width: 60%;
-  min-height: 540px;
+ /* min-height: 540px; */
   float: left;
   border: 1px solid #ccc;
   -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
@@ -192,11 +192,11 @@ Cursor:url(mouse.cur); /*自定义个性鼠标*/
 }
 
 .comment{
-height:100px;
+height: 30px;
 float: left;
 position: relative;
 display: block;
-margin: 2px 2px 2px 2px;
+margin: 10px 10px 10px 10px;
 }
 
 .cw_block{
@@ -485,7 +485,7 @@ dl dd {
 
 footer {
   /* background: transparent url('../images/hr.png') 0 0 no-repeat; */
-  margin-top: 40px
+  margin-top: 20px;
   padding-top: 20px;
   padding-bottom: 30px;
   font-size: 13px;
