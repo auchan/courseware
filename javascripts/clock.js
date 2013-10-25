@@ -28,14 +28,21 @@ function startTime()
 	else if (today.getDay() == 3) week = "星期三";
 	else if (today.getDay() == 4) week = "星期四";
 	// add a zero in front of numbers<10
+	h=checkTime(h);
 	m=checkTime(m);
 	s=checkTime(s);
-	document.getElementById('time').innerHTML= " 第" + num +"周" + "     " + week + "  "+ "<font size=8>" + h+":"+m+":"+s+"</font>";
-	t=setTimeout('startTime()',500);
+	document.getElementById('time').innerHTML= " 第" + weAre9(num) +"周" + "     " + week + "  "+ "<font size=8>" + h+":"+m+":"+s+"</font>";
+	t=setTimeout('startTime()',1000);
 }
 function checkTime(i)
 {
-	if (i<10) 
-	  i = "0" + i;
-    return i;
+	D1 = weAre9(i / 10);
+	D0 = weAre9(i % 10);
+    return D1 + D0;
+}
+function weAre9(num)
+{
+	if (num == 9)
+		return "⑨";
+	return Math.floor(num)+"";
 }
