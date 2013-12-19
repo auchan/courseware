@@ -9,14 +9,14 @@
 	<cw>
 		<name>微机原理与接口技术</name>
         <url>http://dwz.cn/aMLyT</url>
-        <date>2013-11-20 11:42</date>		
-        <comment>第七章 中断与定时-2</comment>
+        <date>2013-12-19 23:45</date>		
+        <comment>第八章 常用的接口技术-4</comment>
 	</cw>
 	<cw>
 		<name>通信原理</name>
         <url> http://dwz.cn/aMLxG</url>
-        <date>2013-11-17 15:41</date>
-        <comment>第六章 数字基带</comment>
+        <date>2013-12-19 23:46</date>
+        <comment>第十一章 差错控制编码</comment>
 	</cw>
     <cw>
         <name>计算机网络</name>
@@ -33,8 +33,8 @@
     <cw>
         <name>编译原理</name>
         <url>http://dwz.cn/aMLM4</url>
-        <date>2013-11-20 13:31</date>
-        <comment>第四章 语法分析-最后部分</comment>
+        <date>2013-12-19 23:47</date>
+        <comment>第七章 运行环境</comment>
     </cw>
 	<cw>
         <name>排队论</name>
