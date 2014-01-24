@@ -39,11 +39,7 @@
 					<div class="cw_block">
 					<a href="###" class="button" onclick="openShutManager(this,'grade3-1',false,'大三上学期 [ - ]','大三上学期 [+]')">大三上学期 [ - ]</a>
 					<div id="grade3-1">
-						<ul id="cw_g3_s1">等待加载中...</ul>
-						<!-- 立即加载本学期课件-->
-						<script>
-						loadXMLDoc("cw/cw_info_4.xml", "cw_g3_s1");
-						</script>
+						<ul id="cw_g3_s1"　style="display:none"></br>等待加载中...</ul>
 					</div>
 					</div>
 					
@@ -51,7 +47,7 @@
 					<a href="###" class="button" onclick="openShutManager(this,'grade2-2',false,'大二下学期 [ - ]','大二下学期 [+]')">大二下学期 [+]</a>
 					<div id="grade2-2" style="display:none">	
 						<!-- 目录内容 -->
-						<ul id="cw_g2_s2">等待加载中...</ul>
+						<ul id="cw_g2_s2"></br>等待加载中...</ul>
 					</div>
 					</div>
 				</section>
@@ -79,6 +75,7 @@
 		<script>
 		function init()
 		{		
+			loadXMLDoc("cw/cw_info_4.xml", "cw_g3_s1");
 			loadXMLDoc("cw/cw_info_3.xml", "cw_g2_s2");
 			showBrowserInfo();
 			startTime();
