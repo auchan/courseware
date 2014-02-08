@@ -50,5 +50,5 @@ function showBrowserInfo() {
 		os = os_logo + " " + os_type_p;
     }
 	platform = navigator.platform;
-	document.getElementById('browserInfo').innerHTML = browser + " " + os + " "	+ platform;
+	document.getElementById('browser-info').innerHTML = browser + " " + os + " "	+ platform;
 }
