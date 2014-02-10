@@ -69,10 +69,10 @@ body {
 a {color:#007bc4/*#424242*/; text-decoration:none;}
 a:hover {text-decoration:underline}
 
-time {
+#date {
   position: absolute;
   left: 300px;
-  top: 70px;
+  top: 60px;
   color: #000;
   font-size: 26px;
   font-weight: normal;
@@ -80,10 +80,11 @@ time {
   letter-spacing: 0;
   width: 500px;
 }
+
 .time-font
 {
   font-size: 16px;
-  color: SkyBlue;
+  color: white;
   letter-spacing: 2px;
 }
 
@@ -291,8 +292,8 @@ section a.button {
   margin-left: 4px;
   margin-bottom: 10px;
   font-family: 'Architects Daughter', 'Helvetica Neue', Helvetica, Arial, serif; 
-    -webkit-border-radius: 6px;-moz-border-radius: 6px;border-radius: 6px;
-  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);-moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 6px; -moz-border-radius: 6px; border-radius: 6px;
+  -webkit-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 section a:hover,.maintainHover{color:#fff; text-decoration:none; background:#99f}
 
@@ -536,4 +537,65 @@ img#fork
   position: relative;
   display: block;
   margin:10px 5px 5px 0;
+}
+#animated_div
+{
+  text-align: center;
+  width:100px;
+  height:40px;
+  background:#92B901;
+  color:#ffffff;
+  position:relative;
+  top: 40px;
+  left: 500px;
+  font-weight:bold;
+  font-size:20px;
+  padding:10px;
+  margin: 10px;
+  animation:animated_div 5s infinite;
+  -moz-animation:animated_div 5s infinite;
+  -webkit-animation:animated_div 5s infinite;
+  -o-animation:animated_div 5s infinite;
+  border-radius:5px;
+  -webkit-border-radius:5px;
+}
+
+@keyframes animated_div
+{
+0%		{-webkit-transform: rotate(0deg);}
+25%		{-webkit-transform: rotate(20deg);}
+50%		{-webkit-transform: rotate(0deg);}
+55%		{-webkit-transform: rotate(0deg);}
+70%		{-webkit-transform: rotate(0deg);background:#1ec7e6;}
+100%	{-webkit-transform: rotate(-360deg);}
+}
+
+@-webkit-keyframes animated_div
+{
+0%		{-webkit-transform: rotate(0deg);}
+25%		{-webkit-transform: rotate(20deg);}
+50%		{-webkit-transform: rotate(0deg);}
+55%		{-webkit-transform: rotate(0deg);}
+70%		{-webkit-transform: rotate(0deg);background:#1ec7e6;}
+100%	{-webkit-transform: rotate(-360deg);}
+}
+
+@-moz-keyframes animated_div
+{
+0%		{-webkit-transform: rotate(0deg);}
+25%		{-webkit-transform: rotate(20deg);}
+50%		{-webkit-transform: rotate(0deg);}
+55%		{-webkit-transform: rotate(0deg);}
+70%		{-webkit-transform: rotate(0deg);background:#1ec7e6;}
+100%	{-webkit-transform: rotate(-360deg);}
+}
+
+@-o-keyframes animated_div
+{
+0%		{-webkit-transform: rotate(0deg);}
+25%		{-webkit-transform: rotate(20deg);}
+50%		{-webkit-transform: rotate(0deg);}
+55%		{-webkit-transform: rotate(0deg);}
+70%		{-webkit-transform: rotate(0deg);background:#1ec7e6;}
+100%	{-webkit-transform: rotate(-360deg);}
 }

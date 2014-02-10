@@ -35,8 +35,8 @@ function clock()
 	h = checkTime(h);
 	m = checkTime(m);
 	s = checkTime(s);
-	document.getElementById('time').innerHTML= ' 第' + weAre9(num) + '周' + "     " + week + "  " +
-                  	'<span class="time-font">' + h + ':' + m + ':' + s + '</span>';
+	document.getElementById('date').innerHTML= ' 第' + weAre9(num) + '周' + "     " + week;
+    document.getElementById('time').innerHTML= '<span class="time-font">' + h + ':' + m + ':' + s + '</span>';
 	setTimeout('clock()', 1000);
 }
 function checkTime(i)
