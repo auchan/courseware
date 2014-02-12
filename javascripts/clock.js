@@ -7,9 +7,10 @@ function initClock()
 {
 	// 2013 年 2 月 25 日为第二学年第二学期，教学周第一周的第一天
 	// 2013 年 8 月 26 日为第三学年第一学期，教学周第一周的第一天
-	startYear = 2013;
-	startMonth = 8;
-	startDay = 26;
+	// 2014 年 2 月 17 日为第三学年第二学期，教学周第一周的第一天
+	startYear = 2014;
+	startMonth = 2;
+	startDay = 17;
 	startDate = new Date();
 	startDate.setDate(startDay);
 	startDate.setMonth(startMonth - 1); /* 月份从0开始 */
