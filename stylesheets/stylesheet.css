@@ -562,12 +562,12 @@ img#fork
 
 @keyframes animated_div
 {
-0%		{-webkit-transform: rotate(0deg);}
-25%		{-webkit-transform: rotate(20deg);}
-50%		{-webkit-transform: rotate(0deg);}
-55%		{-webkit-transform: rotate(0deg);}
-70%		{-webkit-transform: rotate(0deg);background:#1ec7e6;}
-100%	{-webkit-transform: rotate(-360deg);}
+0%		{transform: rotate(0deg);}
+25%		{transform: rotate(20deg);}
+50%		{transform: rotate(0deg);}
+55%		{transform: rotate(0deg);}
+70%		{transform: rotate(0deg);background:#1ec7e6;}
+100%	{transform: rotate(-360deg);}
 }
 
 @-webkit-keyframes animated_div
@@ -582,20 +582,20 @@ img#fork
 
 @-moz-keyframes animated_div
 {
-0%		{-webkit-transform: rotate(0deg);}
-25%		{-webkit-transform: rotate(20deg);}
-50%		{-webkit-transform: rotate(0deg);}
-55%		{-webkit-transform: rotate(0deg);}
-70%		{-webkit-transform: rotate(0deg);background:#1ec7e6;}
-100%	{-webkit-transform: rotate(-360deg);}
+0%		{-moz-transform: rotate(0deg);}
+25%		{-moz-transform: rotate(20deg);}
+50%		{-moz-transform: rotate(0deg);}
+55%		{-moz-transform: rotate(0deg);}
+70%		{-moz-transform: rotate(0deg);background:#1ec7e6;}
+100%	{-moz-transform: rotate(-360deg);}
 }
 
 @-o-keyframes animated_div
 {
-0%		{-webkit-transform: rotate(0deg);}
-25%		{-webkit-transform: rotate(20deg);}
-50%		{-webkit-transform: rotate(0deg);}
-55%		{-webkit-transform: rotate(0deg);}
-70%		{-webkit-transform: rotate(0deg);background:#1ec7e6;}
-100%	{-webkit-transform: rotate(-360deg);}
+0%		{transform: rotate(0deg);}
+25%		{transform: rotate(20deg);}
+50%		{transform: rotate(0deg);}
+55%		{transform: rotate(0deg);}
+70%		{transform: rotate(0deg);background:#1ec7e6;}
+100%	{transform: rotate(-360deg);}
 }
